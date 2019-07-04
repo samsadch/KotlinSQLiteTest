@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\StudioProjects\\Notes\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "C:\\Users\\android-dev\\Desktop\\KotlinMysql\\KotlinSQLiteTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\android-dev\\.gradle\\caches\\transforms-2\\files-2.1\\12d9ad60f07d174027f3071a50308588\\material-1.0.0-rc01\\res\\values-land\\values-land.xml",

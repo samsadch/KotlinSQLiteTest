@@ -44,7 +44,7 @@ class DBManager {
 
     }
 
-    fun Inser(value:ContentValues): Long {
+    fun Insert(value:ContentValues): Long {
         val Id = sqlDB!!.insert(dbtable,"", value)
         return Id;
     }
@@ -61,5 +61,10 @@ class DBManager {
         val args = selectionArgs
         val count = sqlDB!!.delete(dbtable,selection,selectionArgs)
         return count
+    }
+
+    fun Update(contentValues: ContentValues,selection: String, selectionArgs: Array<String>):Int{
+        val count = sqlDB!!.update(dbtable,contentValues,selection,selectionArgs)
+        return  count
     }
 }

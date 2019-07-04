@@ -82,7 +82,12 @@ class MainActivity : AppCompatActivity() {
 
 
             holder.editButton.setOnClickListener {
-
+               /* var intent = Intent(mContext,AddNotesActivity::class.java)
+                intent.putExtra("NOTE",note)
+                startActivity(intent)*/
+                val intent = Intent(mContext, AddNotesActivity::class.java)
+                intent.putExtra("NOTE", note)
+                startActivity(intent)
             }
             holder.deleteButton.setOnClickListener {
                 var dbManager = DBManager(mContext)
