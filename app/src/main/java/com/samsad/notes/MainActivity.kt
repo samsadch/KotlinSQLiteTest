@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -80,13 +81,12 @@ class MainActivity : AppCompatActivity() {
             holder.titleTxv.text=note.noteName
             holder.descRxv.text=note.noteDesc
 
-
             holder.editButton.setOnClickListener {
-               /* var intent = Intent(mContext,AddNotesActivity::class.java)
-                intent.putExtra("NOTE",note)
-                startActivity(intent)*/
                 val intent = Intent(mContext, AddNotesActivity::class.java)
                 intent.putExtra("NOTE", note)
+                intent.putExtra("TITLE",note.noteName)
+                intent.putExtra("DESC",note.noteDesc)
+                intent.putExtra("ID",note.noteId)
                 startActivity(intent)
             }
             holder.deleteButton.setOnClickListener {
