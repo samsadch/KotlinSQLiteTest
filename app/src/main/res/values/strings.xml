@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Notes</string>
+    <string name="title_add_notes">Add Notes</string>
+    <string name="title_edit_notes">Edit Notes</string>
+    <string name="note_success_msg">Note added successfully</string>
+    <string name="note_failure_msg">Note cannot add</string>
+    <string name="note_empty_msg">Please some add note</string>
+    <string name="note_update_success_msg">Note is Updated</string>
+    <string name="note_update_failed">Note cannot be updated</string>
+    <string name="db_id">ID</string>
+    <string name="db_title">Title</string>
+    <string name="db_desc">Description</string>
+    <string name="db_created">Database is created</string>
+    <string name="button_edit">Edit</string>
 </resources>

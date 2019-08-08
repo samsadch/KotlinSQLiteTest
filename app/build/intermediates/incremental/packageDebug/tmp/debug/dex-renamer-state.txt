@@ -1,7 +1,7 @@
-#Thu Jul 04 16:42:30 IST 2019
-base.0=C\:\\Users\\android-dev\\Desktop\\KotlinMysql\\KotlinSQLiteTest\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Thu Aug 08 09:03:54 GST 2019
+base.0=E\:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\android-dev\\Desktop\\KotlinMysql\\KotlinSQLiteTest\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=E\:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

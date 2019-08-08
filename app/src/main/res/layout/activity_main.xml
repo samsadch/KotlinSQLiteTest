@@ -11,9 +11,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="8dp"
         android:id="@+id/recyclerView"/>
 
-   <com.google.android.material.floatingactionbutton.FloatingActionButton
+   <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/addFloat"
@@ -21,6 +22,6 @@
        android:layout_alignParentRight="true"
        android:layout_alignParentBottom="true"
        android:layout_marginBottom="20dp"
-       android:layout_marginRight="20dp"/>
+       android:layout_marginRight="20dp"/>-->
 
 </RelativeLayout>

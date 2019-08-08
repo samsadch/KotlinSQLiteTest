@@ -3,6 +3,7 @@ package com.samsad.notes
 import android.content.ContentProvider
 import android.content.ContentValues
 import android.content.Context
+import android.content.res.Resources
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -35,11 +36,11 @@ class DBManager {
         }
         override fun onCreate(p0: SQLiteDatabase?) {
             p0!!.execSQL(sqlCrateTable)
-            Toast.makeText(context,"Database is created",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,"Database created successfully",Toast.LENGTH_SHORT).show()
         }
 
         override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-            p0!!.execSQL("DROP TABLE IF EXISTS "+dbtable)
+            p0!!.execSQL("DROP TABLE IF EXISTS $dbtable")
         }
 
     }
