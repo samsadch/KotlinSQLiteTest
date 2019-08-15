@@ -32,6 +32,10 @@
         "source": "C:\\Users\\neelaganda.m\\.gradle\\caches\\transforms-2\\files-2.1\\3b7c1d561fb401e2e14785f5b69d6fca\\appcompat-1.0.2\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit_white.xml.flat",
+        "source": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\src\\main\\res\\drawable\\ic_edit_white.xml"
+    },
+    {
         "merged": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_separator.xml.flat",
         "source": "C:\\Users\\neelaganda.m\\.gradle\\caches\\transforms-2\\files-2.1\\12d9ad60f07d174027f3071a50308588\\material-1.0.0-rc01\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dark_round_card.xml.flat",
+        "source": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\src\\main\\res\\drawable\\dark_round_card.xml"
     },
     {
         "merged": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -330,6 +338,10 @@
     {
         "merged": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
         "source": "C:\\Users\\neelaganda.m\\.gradle\\caches\\transforms-2\\files-2.1\\3b7c1d561fb401e2e14785f5b69d6fca\\appcompat-1.0.2\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete_white.xml.flat",
+        "source": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\src\\main\\res\\drawable\\ic_delete_white.xml"
     },
     {
         "merged": "E:\\Samsad\\AndroidProjects\\KotlinSQLiteTest\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",

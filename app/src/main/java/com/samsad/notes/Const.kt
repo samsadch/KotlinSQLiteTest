@@ -6,5 +6,7 @@ class Const{
         val DB_ID:String = "ID"
         val DB_TITLE = "Title"
         val DB_DESC = "Description"
+
+        val INTENT_NOTE = "NOTE"
     }
 }

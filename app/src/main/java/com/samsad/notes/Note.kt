@@ -1,10 +1,9 @@
 package com.samsad.notes
 
-import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+import java.io.Serializable
 
-@Parcelize
-class Note() : Parcelable {
+
+class Note() : Serializable {
 
     var noteId:Int?=null
     var noteName:String?=null

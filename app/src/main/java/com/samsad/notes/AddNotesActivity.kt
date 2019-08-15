@@ -8,9 +8,11 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_add_notes.*
 import android.content.Intent
 import android.view.MenuItem
+import androidx.core.app.NotificationCompat.EXTRA_PEOPLE
 import com.samsad.notes.Const.Companion.DB_DESC
 import com.samsad.notes.Const.Companion.DB_ID
 import com.samsad.notes.Const.Companion.DB_TITLE
+import com.samsad.notes.Const.Companion.INTENT_NOTE
 
 
 class AddNotesActivity : AppCompatActivity() {
@@ -41,12 +43,13 @@ class AddNotesActivity : AppCompatActivity() {
         actionbar.setIcon(R.drawable.ic_back)
 
 
-        if(intent.getStringExtra("TITLE")!=null) {
-            note = intent.getParcelableExtra("NOTE")
+
+        if(intent.hasExtra(INTENT_NOTE)) {
+            note = (intent.extras!!.getSerializable(INTENT_NOTE) as? Note)!!
             actionbar.title = getString(R.string.title_edit_notes)
-            title = intent.getStringExtra("TITLE")
-            desc = intent.getStringExtra("DESC")
-            id = intent.getIntExtra("ID", 0)
+            title = note.noteName!!
+            desc = note.noteDesc!!
+            id = note.noteId!!
         }
 
         if(id!=0){

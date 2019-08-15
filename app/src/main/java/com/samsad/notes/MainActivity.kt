@@ -5,8 +5,10 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.*
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.SearchView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.samsad.notes.Const.Companion.DB_DESC
 import com.samsad.notes.Const.Companion.DB_ID
 import com.samsad.notes.Const.Companion.DB_TITLE
+import com.samsad.notes.Const.Companion.INTENT_NOTE
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.ticket.view.*
 
@@ -24,7 +27,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var adapter:NotesAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.ThemeDark)
         setContentView(R.layout.activity_main)
+
         adapter=NotesAdapter(noteList,this)
         loadFromDb("%")
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -117,12 +122,16 @@ class MainActivity : AppCompatActivity() {
             holder.titleTxv.text=note.noteName
             holder.descTxv.text=note.noteDesc
 
+
+            /*var outValue:TypedValue = TypedValue()
+            theme.resolveAttribute(R.attr.themeName, outValue, true);
+            if ("dark".equals(outValue.string)) {
+                    holder.topLlay.setBackgroundResource(R.drawable.dark_round_card)
+            }*/
+
             holder.editButton.setOnClickListener {
                 val intent = Intent(mContext, AddNotesActivity::class.java)
-                intent.putExtra("NOTE", note)
-                intent.putExtra("TITLE",note.noteName)
-                intent.putExtra("DESC",note.noteDesc)
-                intent.putExtra("ID",note.noteId)
+                intent.putExtra(INTENT_NOTE, note)
                 startActivity(intent)
             }
             holder.deleteButton.setOnClickListener {
@@ -138,6 +147,7 @@ class MainActivity : AppCompatActivity() {
             val descTxv = itemView.description!!
             val editButton: Button = itemView.editButton
             val deleteButton: Button = itemView.deleteButton
+            val topLlay:LinearLayout = itemView.topLlay
         }
 
     }

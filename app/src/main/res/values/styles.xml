@@ -1,11 +1,60 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+
+        <item name="android:navigationBarDividerColor">@color/colorPrimaryDark</item>
     </style>
 
+    <!-- Light base activity theme -->
+    <style name="ActivityTheme.Primary.Base.Light" parent="AppTheme">
+        <item name="primaryTextColor">#28292e</item>
+        <item name="secondaryTextColor">#96F4F4F6</item>
+        <item name="backgroundCardColor">#FFFF</item>
+        <item name="dividerColor">#F2F2F3</item>
+        <!--<item name="iconPlaceholder">@drawable/i_light_plholder</item>-->
+    </style>
+    <!-- Dark base activity theme -->
+    <style name="ActivityTheme.Primary.Base.Dark"    parent="AppTheme">
+        <item name="colorPrimary">@color/dark_background</item>
+        <item name="primaryTextColor">#33343B</item>
+        <item name="secondaryTextColor">#8033343B</item>
+        <item name="backgroundCardColor">#28292e</item>
+        <item name="dividerColor">#F2F2F3</item>
+        <!--<item name="iconPlaceholder">@drawable/i_dark_pholder</item>-->
+    </style>
+
+
+    <!-- Specific Feed activity theme -->
+    <style name="ThemeLight" parent="ActivityTheme.Primary.Base.Light">
+        <item name="android:windowBackground">@color/grey</item>
+        <item name="android:background">@color/grey</item>
+        <item name="android:colorBackground">@color/grey</item>
+        <item name="iconEdit">@drawable/ic_edit</item>
+        <item name="iconDelete">@drawable/ic_delete</item>
+        <item name="themeName">light</item>
+        <item name="backgroundList">@drawable/white_round_card</item>
+        <item name="backgroundMain">@color/grey</item>
+    </style>
+
+    <style name="ThemeDark" parent="ActivityTheme.Primary.Base.Dark">
+        <item name="colorPrimary">@color/dark_background</item>
+        <item name="android:windowBackground">#28292e</item>
+        <item name="android:background">@color/dark_background</item>
+        <item name="android:colorBackground">#28292e</item>
+        <item name="themeName">dark</item>
+        <item name="iconEdit">@drawable/ic_edit_white</item>
+        <item name="iconDelete">@drawable/ic_delete_white</item>
+        <item name="backgroundList">@drawable/dark_round_card</item>
+        <item name="backgroundMain">@color/background_gray</item>
+    </style>
+
+
+    <color name="background_gray">#525252</color>
 </resources>
